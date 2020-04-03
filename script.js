@@ -5,6 +5,8 @@ function setLap(){
 }
 function increase(){
 	x++;
+	document.getElementById('laps').innerHTML=x;
+	document.getElementById('mileage').innerHTML=Math.round(1000*(x*lapLength)/5280)/1000
 }
 document.onkeypress=function(event){
 	if(event.keyCode==32 || event.keyCode == 61){
