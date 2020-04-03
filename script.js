@@ -1,5 +1,8 @@
 var x = 0;
-var lapLength=55;
+var lapLength;
+function setLap(){
+	lapLength=parseInt(document.getElementById('laplength').value);
+}
 document.onkeypress=function(event){
 	if(event.keyCode==32 || event.keyCode == 61){
 		x++;
